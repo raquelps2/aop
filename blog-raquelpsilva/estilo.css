@@ -1,0 +1,111 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo geral */
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #f2f2f2;
+}
+
+/* Seção de apresentação */
+.apresentacao {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.apresentacao h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.apresentacao p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666;
+}
+
+/* Cards de destaques */
+.destaques {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin: 16px;
+    color: #222;
+}
+
+.card p {
+    margin: 0 16px 16px 16px;
+    color: #555;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 60px;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+}
